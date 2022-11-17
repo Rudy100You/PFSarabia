@@ -1,0 +1,11 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+}
+header.navbar {
+    padding-left: 6rem;
+}
+.nav-buttons li{
+    list-style-type:none;
+    display:inline;
+}
