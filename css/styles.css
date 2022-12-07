@@ -11,31 +11,29 @@ body {
 }
 header {
   background-color: rgba(0, 0, 0, 0.979);
-  height: 7%;
-  width: 100%;
   position: sticky;
   top: 0;
 }
-
-header > *{
-    padding-inline: 5%;
-    display: inline-block;
-    vertical-align: middle;
+main{
+    margin-block-start: 0;
 }
 
+ nav *{
+    color: white;
+} 
 .logo {
-  width: 10%;
+  width: 10vw;
   text-align: center;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
-nav {
+/* nav {
   width: 72%;
   margin-block-start: 1em;
   margin-block-end: 1em;
   padding-right: 0;
-}
+} */
 
 #loginButton{
     padding-left: 2.6vw;
@@ -62,11 +60,6 @@ li a {
   text-decoration: none;
 }
 
-main{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
 main > *{
     padding: 5%;
     background-color: white;
@@ -79,7 +72,7 @@ main > *{
 
   /* Set a specific height */
   height: 80%;
-  min-width: 100vw;
+  min-width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -87,19 +80,25 @@ main > *{
   background-size: cover;
   
   padding-top: 25%;
-  padding-bottom: 6%;
+  padding-bottom: 12%;
 }
 
+#banner__content{
+    padding-left: 5%;
+}
+
+
+/* 
 .banner h1,h3{
     margin-block-end: 0;
     margin-block-start: 0;
-}
-.banner h1{
+} */
+/* .banner h1{
     font-size: 4em;
 }
 .banner h3{
     font-size: 2.3em;
-}
+} */
 
 .arrowButton{
     margin-top: 2%;
@@ -135,12 +134,11 @@ main > *{
 .featuresBanner__text{
     width: 60%;
 }
-.featuresBanner img{
+/*.featuresBanner img{
     width: 30%;
     height: auto;
     overflow: hidden;
-}
-
+}*/
 .storeBadges img{
     width: 100%;
     height: auto;

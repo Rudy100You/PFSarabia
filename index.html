@@ -1,225 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>WebFlix - Todas tus peliculas, donde quieras</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/styles.css"
-    />
-    <script src="./js/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Jost:ital,wght@0,100;0,300;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <img
-        class="logo"
-        src="img/web-flix-high-resolution-logo-color-on-transparent-background.png"
-        alt="WebFlix"
-      />
-      <nav class="navegacion">
-        <ul class="navegacion__menu">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/subscripcion.html">Planes</a></li>
-          <li><a href="./pages/prueba.html">Prueba</a></li>
-          <li><a href="./pages/error.html">Merchandising</a></li>
-          <li id="loginButton">
-            <a href="./pages/error.html"
-              ><span>Inicar Sesion</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-user-circle"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="10" r="3" />
-                <path
-                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
-                />
-              </svg>
+
+<head>
+  <meta charset="utf-8" />
+  <title>WebFlix - Todas tus peliculas, donde quieras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Jost:ital,wght@0,100;0,300;0,600;1,300&display=swap"
+    rel="stylesheet" />
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark d-print">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="./index.html"><img
+              src="img/web-flix-high-resolution-logo-color-on-transparent-background.png" alt="WebFlix" height="12" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./pages/subscripcion.html">Planes</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./pages/prueba.html">Prueba</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./pages/error.html">Merchandising</a></li>
+            </ul>
+            
+            <a href="./pages/error.html" class="px-0">
+              <button class="btn btn-outline-light " type="submit">Iniciar Sesion</button>
             </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+          </div>
+        </div>
+    </div>
+    </nav>
+
+  </header>
+  <main>
+    <div class="container-fluid p-0">
       <section class="banner">
         <div id="banner__content">
-          <h1>Todas tus peliculas</h1>
-          <h3>Donde quieras</h3>
-          <button
-            class="arrowButton"
-            type="button"
-            onclick="location.href='pages/error.html.html'"
-          >
+          <h1 class="display-1">Todas tus peliculas</h1>
+          <h3 class="display-5">Donde quieras</h3>
+          <button class="btn btn-danger" type="button" onclick="location.href='pages/error.html.html'">
             Inicia Sesion
           </button>
         </div>
       </section>
-      <section class="featuresBanners">
-        <div class="featuresBanner">
-          <img
-            src="img/pexels-ketut-subiyanto-4307904.jpg"
-            alt="Cuando quieras"
-          />
-          <div class="featuresBanner__text">
-            <h4>Cuando quieras</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+    </div>
+    <section class="featuresBanners">
+      <div class="row featuresBanner">
+        <div class="col">
+          <img src="img/pexels-ketut-subiyanto-4307904.jpg" alt="Cuando quieras" class="img-fluid banner-img" />
         </div>
-        <div class="featuresBanner">
-          <div class="featuresBanner__text">
-            <h4>Donde quieras</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a class="storeBadges" href="http://play.google.com/store/"
-              ><img
-                alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png?"
-            /></a>
-            <a class="storeBadges" href="https://apps.apple.com/"
-              ><img
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1270080000&h=5dd0b82aebdce8f746f791ee9636a7b3"
-                alt="Download on the App Store"
-            /></a>
-          </div>
-          <img src="img/pexels-keira-burton-6146933.jpg" alt="Donde quieras" />
+        <div class="col col-lg-2">
+          <h4>Cuando quieras</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-      </section>
-      <section class="planSelect">
-        <h1>¡Empezá ya a disfrutar del contenido que mas te gusta!</h1>
-        <button
-          class="arrowButton"
-          type="button"
-          onclick="location.href='./pages/subscripcion.html'"
-        >
-          Conoce nuestros planes
-        </button>
-      </section>
-    </main>
-    <footer>
-      <div class="sitemap">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/error.html">Merchandising</a></li>
-          <li><a href="./pages/error.html">Nosotros</a></li>
-        </ul>
-        <ul>
-          <li><a href="./pages/error.html">Empleo</a></li>
-          <li><a href="./pages/consultas.html">Quejas y sugerencias</a></li>
-        </ul>
       </div>
-      <div class="socialMedia">
-        <a href="./pages/error.html"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-facebook"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            alt="facebook"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-            /></svg
-        ></a>
-        <a href="./pages/error.html"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-twitter"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            alt="twitter"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-            /></svg
-        ></a>
-        <a href="./pages/error.html"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-instagram"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            alt="instagram"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="4" y="4" width="16" height="16" rx="4" />
-            <circle cx="12" cy="12" r="3" />
-            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg
-        ></a>
-        <a href="./pages/error.html"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-youtube"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            alt="youtube"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="4" />
-            <path d="M10 9l5 3l-5 3z" /></svg
-        ></a>
+      <div class="row">
+        <div class="col 6">
+          <h4>Donde quieras</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a class="storeBadges" href="http://play.google.com/store/"><img alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png?" /></a>
+          <a class="storeBadges" href="https://apps.apple.com/"><img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1270080000&h=5dd0b82aebdce8f746f791ee9636a7b3"
+              alt="Download on the App Store" /></a>
+        </div>
+        <div class="col">
+          <img src="img/pexels-keira-burton-6146933.jpg" alt="Donde quieras" class="img-fluid banner-img" />
+        </div>
       </div>
-      <div class="author">
-        <p>2022 - Rudy Sarabia</p>
-      </div>
-    </footer>
-  </body>
+    </section>
+    <section class="planSelect">
+      <h1>¡Empezá ya a disfrutar del contenido que mas te gusta!</h1>
+      <button class="arrowButton" type="button" onclick="location.href='./pages/subscripcion.html'">
+        Conoce nuestros planes
+      </button>
+    </section>
+  </main>
+  <footer>
+    <div class="sitemap">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/error.html">Merchandising</a></li>
+        <li><a href="./pages/error.html">Nosotros</a></li>
+      </ul>
+      <ul>
+        <li><a href="./pages/error.html">Empleo</a></li>
+        <li><a href="./pages/consultas.html">Quejas y sugerencias</a></li>
+      </ul>
+    </div>
+    <div class="socialMedia">
+      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="facebook">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg></a>
+      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="twitter">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+        </svg></a>
+      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          alt="instagram">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg></a>
+      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="youtube">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="3" y="5" width="18" height="14" rx="4" />
+          <path d="M10 9l5 3l-5 3z" />
+        </svg></a>
+    </div>
+    <div class="author">
+      <p>2022 - Rudy Sarabia</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
