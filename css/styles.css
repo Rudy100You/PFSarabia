@@ -20,6 +20,7 @@ main{
 
  nav *{
     color: white;
+    z-index: 0;
 } 
 .logo {
   width: 10vw;
@@ -62,14 +63,16 @@ li a {
 
 main > *{
     padding: 5%;
-    background-color: white;
+    background-color:white;
 }
 /*banner*/
 .banner {
   
   /* The image used */
   background: url("../img/pexels-tima-miroshnichenko-7991158.jpg") black;
-
+  background-color: grey;
+  background-blend-mode: multiply;
+  
   /* Set a specific height */
   height: 80%;
   min-width: 100%;
@@ -115,25 +118,42 @@ main > *{
   height: 60px;
 }
 .featuresBanners{
-    padding-inline: 0;
+    background-color: black;
     padding-top: 0;
     margin-top: 0;
 }
 .featuresBanner{
-    background-color: black;
-    margin-block-start: 8vh;
-    padding: 8%;
-}
-.featuresBanner > *{
-    
-    display: inline-block;
-    vertical-align: middle;
-    padding-inline-end: 3%;
+    display: flex;
+    justify-items: center;
+    gap: 3vw;
 }
 
+.featuresBanner__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: auto;
+  }
+
 .featuresBanner__text{
-    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 59%;
 }
+
+.featuresBanner__text, .featuresBanner__img{
+    padding-top: 10%;
+}
+@media screen and (max-width: 480px) {
+    .featuresBanner{
+        display: block;
+        padding-top: 20%;
+    }
+    .featuresBanner__img, .featuresBanner__text{
+        width: 100%;
+        display: block;
+    }
+  }
 /*.featuresBanner img{
     width: 30%;
     height: auto;
@@ -150,6 +170,7 @@ main > *{
 .planSelect h1{
     text-align: center;
     color: black;
+    margin-bottom: 3%;
 }
 
 /*footer*/
