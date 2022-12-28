@@ -1,0 +1,32 @@
+
+  @import 'globals.scss';
+  @import 'components/navbar.scss';
+  @import 'components/footer.scss';
+  @import 'views/landingContent.scss';
+  @import 'views/subscriptionContent.scss';
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.979);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  main{
+      margin-block-start: 0;
+  }
+
+  article h2{
+    margin-top: 5%;
+    display:inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  main > *{
+    
+      padding: 5%;
+      background-color:white;
+  }
+ 
+  

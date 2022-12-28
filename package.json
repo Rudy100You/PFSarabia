@@ -1,0 +1,30 @@
+{
+  "name": "coderhouse_final_project",
+  "version": "1.0.0",
+  "description": "Proyecto Final Coderhouse",
+  "main": "js/index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss css/scss/main.scss css/styles.css -rw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rudy100You/coderhouse_final_project.git"
+  },
+  "keywords": [
+    "web_development",
+    "html",
+    "css",
+    "sass",
+    "coderhouse"
+  ],
+  "author": "Rudy Axel Sarabia Veliz",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Rudy100You/coderhouse_final_project/issues"
+  },
+  "homepage": "https://github.com/Rudy100You/coderhouse_final_project#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

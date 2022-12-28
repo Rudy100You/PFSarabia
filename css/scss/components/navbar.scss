@@ -1,0 +1,38 @@
+  
+
+nav *{
+    color: white;
+    z-index: 0;
+} 
+.logo {
+  width: 10vw;
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/* nav {
+  width: 72%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-right: 0;
+} */
+
+#loginButton{
+    padding-left: 2.6vw;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+#loginButton a >*{
+    vertical-align: middle;
+   display: inline-block;
+   padding-left: 2px;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+  display: inline;
+  margin: 0px 3%;
+}

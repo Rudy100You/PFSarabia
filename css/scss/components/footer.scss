@@ -1,0 +1,39 @@
+ /*footer*/
+  
+ footer{
+    position: relative;
+    bottom: 0;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+footer > *{
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-end: 3%;
+}
+.sitemap{
+    width: 40%;
+}
+
+.sitemap ul{
+    display: inline-block;
+    vertical-align: top;
+    padding-inline-end: 3%;
+    list-style: none;
+}
+
+.sitemap ul li a{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: rgb(107, 95, 95);
+}
+.socialMedia{
+    width: 25%;
+    vertical-align: middle;
+}
+.author{
+    width: 20%;
+}
+.author p{
+    font-size: 0.8rem;
+}
