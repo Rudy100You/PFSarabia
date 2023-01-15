@@ -47,18 +47,16 @@ nav ul li {
 
 /*footer*/
 footer {
-  position: relative;
-  bottom: 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
   padding-left: 5%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+  column-gap: 10vw; }
 
-footer > * {
-  display: inline-block;
+footer {
   vertical-align: middle;
   padding-inline-end: 3%; }
-
-.sitemap {
-  width: 40%; }
 
 .sitemap ul {
   display: inline-block;
@@ -69,17 +67,42 @@ footer > * {
 .sitemap ul li a {
   font-size: 0.9em;
   font-weight: 400;
-  color: #6b5f5f; }
+  color: #b4a6a6; }
 
 .socialMedia {
-  width: 25%;
-  vertical-align: middle; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .socialMedia a {
+    flex: 1; }
+  .socialMedia a > svg {
+    display: block;
+    height: auto;
+    width: 100%; }
 
 .author {
-  width: 20%; }
+  width: 20%;
+  margin-top: auto; }
 
 .author p {
   font-size: 0.8rem; }
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: block; }
+    footer > * {
+      margin-bottom: 2rem; }
+  .sitemap {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; }
+  .socialMedia {
+    column-gap: 10vw;
+    width: 80%;
+    margin-inline: auto; }
+  .author {
+    margin-inline: auto;
+    width: fit-content; } }
 
 .banner {
   /* The image used */
@@ -140,38 +163,44 @@ footer > * {
   margin-top: 5%;
   display: flex;
   justify-items: center;
+  align-items: flex-start;
   gap: 3vw; }
   .featuresBanner__img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 40%;
-    margin-block: auto; }
+    flex: 1; }
+    .featuresBanner__img img {
+      width: 100%; }
   .featuresBanner__text {
-    display: inline-block;
-    vertical-align: middle;
     width: 59%; }
     .featuresBanner__text-title svg {
       display: none; }
-    .featuresBanner__text__storeBadges {
-      width: 100%;
-      height: 10%; }
-      .featuresBanner__text__storeBadges-badge {
-        display: inline-block;
-        width: 40%; }
-        .featuresBanner__text__storeBadges-badge img {
-          height: 100%;
-          width: 100%;
-          margin-inline: auto; }
-        .featuresBanner__text__storeBadges-badge #appStoreBadge {
-          padding: 1; }
-      .featuresBanner__text__storeBadges #appStoreButton {
-        padding: 3.5%; }
+    .featuresBanner__text-title h4 {
+      font-size: clamp(1rem, 1.8vw, 4rem);
+      font-weight: bold; }
+    .featuresBanner__text p {
+      font-size: clamp(1rem, 1.6vw, 4rem); }
+    .featuresBanner__text-content-storeBadges {
+      display: flex;
+      padding-right: 40%;
+      justify-content: start; }
+      .featuresBanner__text-content-storeBadges-badge_google {
+        flex: 2.58; }
+      .featuresBanner__text-content-storeBadges-badge_appStore {
+        flex: 2.02;
+        display: flex; }
+      .featuresBanner__text-content-storeBadges > a > img {
+        display: block;
+        height: auto;
+        width: 100%;
+        background-blend-mode: multiply; }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 480px) {
+  .featuresBanners {
+    margin-block: 5vh; }
   .featuresBanner {
     display: block;
     margin-top: 10%;
-    position: relative; }
+    position: relative;
+    height: fit-content; }
     .featuresBanner__img {
       width: 100%;
       display: block;
@@ -187,7 +216,6 @@ footer > * {
       left: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden;
       z-index: 2; }
       .featuresBanner__text-title {
         width: 100%;
@@ -209,12 +237,27 @@ footer > * {
         .featuresBanner__text-title svg {
           margin-left: auto;
           align-self: flex-end;
-          height: 100%; }
-        .featuresBanner__text-title svg:checked {
+          height: 100%;
+          transform: rotate(0deg);
+          transition: transform 0.125s linear; }
+        .featuresBanner__text-title .rotatedArrow {
           transform: rotate(90deg);
-          box-shadow: none; }
-      .featuresBanner__text p, .featuresBanner__text a {
-        display: none; } }
+          transition: transform 0.125s linear; }
+      .featuresBanner__text-content-storeBadges {
+        padding-inline: 5%;
+        justify-content: center; }
+      .featuresBanner__text .collapsedText {
+        display: none; }
+    .featuresBanner .expandedText {
+      background-color: #000000;
+      border-color: #000000;
+      height: 100%;
+      margin-bottom: 1vh; }
+      .featuresBanner .expandedText .featuresBanner__img {
+        display: none; }
+      .featuresBanner .expandedText .featuresBanner__text-content {
+        display: block;
+        height: 100%; } }
 
 .planSelect {
   width: 100%;
@@ -233,29 +276,28 @@ footer > * {
   margin-block-end: 0px; }
 
 .subscription__title h1 {
-  font-size: 5em; }
+  font-size: clamp(1rem, 1.8vw, 4rem); }
 
 .subscription__title h3 {
-  font-size: 3em; }
+  font-size: clamp(1rem, 1.8vw, 4rem); }
 
-.subscription-card {
-  display: inline-block;
-  margin: 0px 3%;
-  width: 25vw;
-  height: 40vh;
-  margin: auto;
-  border-width: 4px;
-  border-color: black;
-  border-radius: 50; }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+body > * {
+  padding: 5%; }
 
 header {
+  padding: 0.1vh;
   background-color: rgba(0, 0, 0, 0.979);
   position: sticky;
   top: 0;
   z-index: 10; }
 
-main {
-  margin-block-start: 0; }
+article {
+  margin: auto 0; }
 
 article h2 {
   margin-top: 5%;
@@ -263,7 +305,3 @@ article h2 {
   width: 100%;
   color: white;
   text-align: center; }
-
-main > * {
-  padding: 5%;
-  background-color: white; }

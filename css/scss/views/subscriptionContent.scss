@@ -5,20 +5,8 @@
 }
 
 .subscription__title h1{
-    font-size: 5em;
+    font-size: clamp(1rem, 1.8vw, 4rem);
 }
 .subscription__title h3{
-    font-size: 3em;
-}
-
-.subscription-card{
-    display: inline-block;
-    
-    margin: 0px 3%;
-    width: 25vw;
-    height: 40vh;
-    margin: auto;
-    border-width: 4px;
-    border-color: black;
-    border-radius: 50;
+    font-size: clamp(1rem, 1.8vw, 4rem);
 }

@@ -17,8 +17,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Jost:ital,wght@0,100;0,300;0,600;1,300&display=swap"
     rel="stylesheet" />
-  <script src="./js/bootstrap.min.js" ></script>
-  <script src="./js/main.js" type="text/javascript"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -52,83 +52,88 @@
     </nav>
 
   </header>
-  <main>
-    <div class="container-fluid p-0">
-      <section class="banner">
-        <div class="banner__content">
-          <h1 class="display-1">Todas tus peliculas</h1>
-          <h1 class="display-5">Donde quieras</h3>
+    <section class="banner">
+      <div class="banner__content">
+        <h1 class="display-1">Todas tus peliculas</h1>
+        <h1 class="display-5">Donde quieras</h3>
           <button class="btn btn-danger" type="button" onclick="location.href='pages/error.html.html'">
             Inicia Sesion
           </button>
-        </div>
-      </section>
-    </div>
-    <article class="featuresBanners">
-      <h2 class="display-6" >Disfruta de WebFlix...</h2>
-      <div class="featuresBanner">
-        
-          <div class="featuresBanner__img">
-            <img src="img/pexels-ketut-subiyanto-4307904.jpg" alt="Cuando quieras" class="img-fluid"/>
-          </div>
-          <div class="featuresBanner__text">
-            <div class="featuresBanner__text-title">
-            <h4>Cuando quieras</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-            </div>
-            
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor -block;-block;didunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
       </div>
-<div class="featuresBanner">
-  
-          <div class="featuresBanner__text">
-            <div class="featuresBanner__text-title">
-              <h4>Donde quieras</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div class="featuresBanner__text__storeBadges">
-            <a class="featuresBanner__text__storeBadges-badge" href="http://play.google.com/store/">
-              <img id="googlePlayButton" alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png?" /></a>
-            <a class="featuresBanner__text__storeBadges-badge" href="https://apps.apple.com/">
-              <img id="appStoreButton"
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1270080000&h=5dd0b82aebdce8f746f791ee9636a7b3"
-                alt="Download on the App Store" /></a>
-              </div>
-          </div>
-            <div class="featuresBanner__img"><img src="img/pexels-edmilson-eucleni-8177852.jpg" alt="Donde quieras" class="img-fluid" /></div>
-</div>
-
-    </article>
-    <section class="planSelect">
-      <h1>¡Empezá ya a disfrutar del contenido que mas te gusta!</h1>
-      <button class="btn btn-outline-success" type="button" onclick="location.href='./pages/subscripcion.html'">
-        Conoce nuestros planes
-      </button>
     </section>
-  </main>
+  <article class="featuresBanners">
+    <h2 class="display-6">Disfruta de WebFlix...</h2>
+    <div class="featuresBanner">
+
+      <div class="featuresBanner__img">
+        <img src="img/pexels-ketut-subiyanto-4307904.jpg" alt="Cuando quieras" class="img-fluid" />
+      </div>
+      <div class="featuresBanner__text">
+        <div class="featuresBanner__text-title">
+          <h4>Cuando quieras</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6" onClick="collapseBanner(this)">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+        <div class="featuresBanner__text-content collapsedText">
+          <p>
+          ¡Puedes ver las distintas series que tenemos disponibles en nuestro catálogo en coualquier momento 
+          del dia!
+        </p> 
+        <p>
+          Mientras comes, antes de descansar, en el viaje...
+        </p>
+        <p>
+          ¡Nuestro servicio estará disponible 24/7!
+        </p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="featuresBanner">
+
+      <div class="featuresBanner__text">
+        <div class="featuresBanner__text-title">
+          <h4>Donde quieras</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6" onclick="collapseBanner(this)">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+
+        <div class="featuresBanner__text-content collapsedText">
+          <p>
+          ¡Contamos con compatibilidad en una gran cantidad de dispositvos! </p>
+          <p>
+            Asi que no importa donde mires, disfrutaras de las mejores pelis y series
+          </p>
+          <p>Descarga nuestra app:</p>
+          <div class="featuresBanner__text-content-storeBadges">
+          <a class="featuresBanner__text-content-storeBadges-badge_google" href="http://play.google.com/store/">
+            <img id="googlePlayButton" alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" /></a>
+          <a class="featuresBanner__text-content-storeBadges-badge_appStore" href="https://apps.apple.com/">
+            <img id="appStoreButton"
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1270080000&h=5dd0b82aebdce8f746f791ee9636a7b3"
+              alt="Download on the App Store" /></a>
+        </div>
+        
+       
+        </div>
+        
+      </div>
+      <div class="featuresBanner__img"><img src="img/pexels-edmilson-eucleni-8177852.jpg" alt="Donde quieras"
+          class="img-fluid" /></div>
+    </div>
+
+  </article>
+  <section class="planSelect">
+    <h1>¡Empezá ya a disfrutar del contenido que mas te gusta!</h1>
+    <button class="btn btn-outline-success" type="button" onclick="location.href='./pages/subscripcion.html'">
+      Conoce nuestros planes
+    </button>
+  </section>
   <footer>
     <div class="sitemap">
       <ul>
@@ -142,20 +147,20 @@
       </ul>
     </div>
     <div class="socialMedia">
-      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.facebook.com/rudyaxel.sarabiaveliz"><svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="facebook">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
         </svg></a>
-      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://twitter.com/Rudy_100You"><svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="twitter">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path
             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
         </svg></a>
-      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.instagram.com/rudy_s.exe/"><svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"
           alt="instagram">
@@ -164,7 +169,7 @@
           <circle cx="12" cy="12" r="3" />
           <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
         </svg></a>
-      <a href="./pages/error.html"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.youtube.com/channel/UCvaK9ThXGmMsjcLiLMslunw"><svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="youtube">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />

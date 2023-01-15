@@ -1,18 +1,16 @@
  /*footer*/
   
  footer{
-    position: relative;
-    bottom: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
     padding-left: 5%;
     padding-bottom: 3%;
+    column-gap: 10vw
 }
-footer > *{
-    display: inline-block;
+footer {
     vertical-align: middle;
     padding-inline-end: 3%;
-}
-.sitemap{
-    width: 40%;
 }
 
 .sitemap ul{
@@ -25,15 +23,50 @@ footer > *{
 .sitemap ul li a{
     font-size: 0.9em;
     font-weight: 400;
-    color: rgb(107, 95, 95);
+    color: rgb(180, 166, 166);
 }
-.socialMedia{
-    width: 25%;
-    vertical-align: middle;
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        flex: 1;
+    }
+
+    a>svg{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
 }
 .author{
     width: 20%;
+    margin-top: auto;
 }
 .author p{
     font-size: 0.8rem;
+}
+@media screen and (max-width: 480px){
+    footer{
+        display: block;
+        & >*{
+            margin-bottom: 2rem;
+        }
+    }
+    .sitemap{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .socialMedia{
+        column-gap: 10vw;
+        width: 80%;
+        margin-inline: auto;
+    }
+    .author{
+        margin-inline: auto;
+        width: fit-content;
+    }
+
 }
