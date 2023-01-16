@@ -41,7 +41,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
               <li class="nav-item"><a class="nav-link active" href="./subscripcion.html">Planes</a></li>
-              <li class="nav-item"><a class="nav-link active" href="./prueba.html">Prueba</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./error.html">Prueba</a></li>
               <li class="nav-item"><a class="nav-link active" href="./error.html">Merchandising</a></li>
             </ul>
 
@@ -54,39 +54,69 @@
     </nav>
 
   </header>
-  <main class="white-background">
+  <main class="subscription">
     <section class="subscription__title">
       <h1>Elige el mejor plan</h1>
       <h3>Pensado para vos</h3>
     </section>
     <section class="subscription__cards">
-      <div class="card-group">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="Plan Estudiante">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../img/pexels-photo-1438072.jpeg" class="card-img-top" alt="Plan Estudiante">
           <div class="card-body">
             <h5 class="card-title">Plan Estudiante</h5>
-            <p class="card-text"></p>
+            <p class="card-text">
+              <ul>
+                <li>Todas las series disponibles</li>
+                <li>1 cuenta conectada a la red de tu casa + movil libre</li>
+                <li>Acceso anticipado a contenido exclusivo</li>
+                <li>On demand 24/7</li>
+                <li>40% OFF presentando certificado estudiantil!</li>
+              </ul>
+            </p>
           </div>
-
+            <button class="btn btn-success" onClick="paymentDialog(this.id)">Lo quiero!</button>
+          </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="Plan PROMO">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../img/pexels-vlada-karpovich-4050406.jpg" class="card-img-top" alt="Plan PROMO">
           <div class="card-body">
-            <h5 class="card-title">Plan PROMO</h5>
-            <p class="card-text"></p>
+            <h5 class="card-title">Plan individual</h5>
+            <p class="card-text">
+              <ul>
+                <li>Todas las series disponibles</li>
+                <li>1 cuenta conectada a la red de tu casa + movil libre</li>
+                <li>Acceso anticipado a contenido exclusivo</li>
+                <li>On demand 24/7</li>
+              </ul>
+            </p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted text-danger">OFERTA LIMITADA!</small>
+          <button class="btn btn-success"  onClick="paymentDialog(this.id)">Lo quiero!</button>
           </div>
+          
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="Plan FAMILIAR">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../img/pexels-photo-14798018.jpeg" class="card-img-top" alt="Plan FAMILIAR">
           <div class="card-body">
             <h5 class="card-title">Plan FAMILIAR</h5>
-            <p class="card-text"></p>
+            <p class="card-text">
+              <ul>
+                <li>Todas las series disponibles</li>
+                <li>4 cuentas conectadas a la red de tu casa + movil libre</li>
+                <li>Acceso anticipado a contenido exclusivo</li>
+                <li>On demand 24/7</li>
+                <li>Control Parental</li>
+                <li>OFERTA LIMITADA: 20% OFF</li>
+              </ul>
+            </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted ">OFERTA LIMITADA!</small>
+          </div>
+          <button class="btn btn-success" onClick="paymentDialog(this.id)">Lo quiero!</button>
           </div>
         </div>
       </div>
@@ -95,13 +125,13 @@
   <footer>
     <div class="sitemap">
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/error.html">Merchandising</a></li>
-        <li><a href="./pages/error.html">Nosotros</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./error.html">Merchandising</a></li>
+        <li><a href="./error.html">Nosotros</a></li>
       </ul>
       <ul>
-        <li><a href="./pages/error.html">Empleo</a></li>
-        <li><a href="./pages/consultas.html">Quejas y sugerencias</a></li>
+        <li><a href="./error.html">Empleo</a></li>
+        <li><a href="./contacto.html">Quejas y sugerencias</a></li>
       </ul>
     </div>
     <div class="socialMedia">
@@ -136,7 +166,7 @@
         </svg></a>
     </div>
     <div class="author">
-      <p>2022 - Rudy Sarabia</p>
+      <a href="https://github.com/Rudy100You">2022 - Rudy Sarabia</a>
     </div>
   </footer>
 </body>

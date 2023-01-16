@@ -4,3 +4,8 @@ function collapseBanner(element){
 
     element.parentElement.parentElement.classList.toggle("expandedText")
 }
+
+function paymentDialog(planId)
+{
+    window.location.href = "./error.html";
+}
